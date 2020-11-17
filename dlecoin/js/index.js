@@ -8,16 +8,40 @@ let imgs;
 let imgArray = new Array;
 
 const createImg = () => {
+  const newDiv = document.createElement('div');
+  newDiv.className = 'img_wrapper'
+  imgContainer.appendChild(newDiv)
+  
+
+  const closeButton = document.createElement('img');
+  closeButton.src = "https://www.seekpng.com/png/small/52-521758_open-close-button-png-white.png";
+  closeButton.width = '50';
+  closeButton.className = 'close';
+  closeButton.addEventListener('click', (e) => {
+    deleteExactImg(e)
+  })
+
+
   const newImg = document.createElement('img');
   newImg.src = imgLinks;
-  imgContainer.appendChild(newImg);
-  imgs = document.querySelectorAll('img');
+  newImg.className = 'realImg'
+  newDiv.appendChild(newImg);
+
+  newDiv.appendChild(closeButton);
+
+
+  imgs = document.querySelectorAll('.realImg');
   imgArray = Array.from(imgs);
   buttonProperties()
 }
 
 const deleteImg = () => {
   imgArray.pop().remove()
+  buttonProperties()
+}
+
+const deleteExactImg = (e) => {
+  e.target.parentNode.remove()
   buttonProperties()
 }
 
