@@ -1,3 +1,19 @@
+
+.wrapper {
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+  width: 96vw;
+  height: 100vh;
+    margin-left:2vw;
+    margin-right: 2vw;
+  animation: animation 100s linear infinite;
+}
+
+@keyframes animation {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
 .row{
     display: flex;
     flex-direction: row;
@@ -10,7 +26,7 @@
 
 a{
     text-decoration: none;
-    background-color:dodgerblue;
+    background-color:gold;
     border-radius: 25px;
     padding:1vh;
 }
@@ -18,11 +34,12 @@ a{
 a:hover{
     background-color:lightblue;
     color:floralwhite;
-    border: goldenrod dotted 10px;
+    border: goldenrod dashed 2px;
     
 }
 
 h1{
+    color:whitesmoke;
     font-size: 6vw;
     text-decoration: underline overline gold ;
 }
@@ -50,7 +67,7 @@ img{
 
 header{
     border: double floralwhite;
-    background-color: gainsboro;
+
 
 }
 
@@ -102,4 +119,10 @@ footer{
     border: double floralwhite;
     margin-top: 2vh;
     background-color: gainsboro;
+}
+
+#concertsList{
+    list-style: none;
+    line-height: 1.5em;
+    justify-content: space-between;
 }
