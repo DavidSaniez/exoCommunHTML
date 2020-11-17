@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
 
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+#alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
 
 body {
-  margin: 0px !important
+  margin: 0px !important;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
