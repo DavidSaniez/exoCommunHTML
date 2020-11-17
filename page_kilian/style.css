@@ -1,0 +1,79 @@
+#account {
+    background-color: #6d071a;
+    color: gold;
+}
+
+#iconBtn {
+    color: gold;
+}
+
+h4 {
+    color: #6d071a;
+}
+
+#nav {
+    border-bottom: 3px solid #6d071a;
+    background-color: #F8F5CA;
+}
+
+#footer {
+    background-color: #6d071a;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+.footerLetter {
+    color: gold;
+}
+
+#new_user {
+    cursor: pointer;
+}
+
+#lastCreation {
+    text-align: center;
+    color: #6d071a;
+}
+
+.colorBtn{
+    background-color: #6d071a;
+}
+
+img {
+    width: 75%;
+    height: 500px;
+    margin: auto;
+}
+
+.carousel-inner {
+   margin: auto;
+}
+
+#carouselExampleIndicators {
+    background-color: #F8F5CA;
+}
+
+.carousel-control-next-icon  {
+    background-color: #6d071a;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+    background-color: #6d071a;
+    border-radius: 50%; 
+}
+
+#atelier {
+    text-align: center;
+    color: #6d071a; 
+}
+
+.atelier {
+    border: 1px solid #6d071a;
+    border-radius: 10px 100px / 120px;
+    text-align: center;
+    color: #6d071a;
+}
