@@ -22,9 +22,25 @@ let cList = document.querySelector('#concertsList')
 fillConcertsList = ()=>{
     concertArray.forEach( concert =>{
         let elem = document.createElement('li')
-        let text = document.createTextNode(concert.name +" prévu le "+concert.prevu+" places restantes: "+concert.places)
-        elem.appendChild(text)        
+
+        //create a card Concert
+        let card = document.createElement('div')
+        card.classList = "card"
+
+        let cardHeader = document.createElement('p')
+        cardHeader.textContent = concert.name;
+        cardHeader.style.color = "goldenrod"
+
+        let cardBody = document.createElement('h4')
+        cardBody.innerHTML = "City: "+concert.where+"<br>  Prévu le "+concert.prevu+" places restantes: "+concert.places;
+
+        //appending to card
+        card.appendChild(cardHeader)
+        card.appendChild(cardBody)
+
+        elem.appendChild(card)        
         elem.classList ="concert"
+        // When the user clicks on a concert, open the modal
         elem.addEventListener('click', (event)=>{
             modal.style.display = "block"
         })
@@ -42,8 +58,6 @@ var modal = document.querySelector("#myModal");
 let concerts = document.querySelectorAll('#concertsList>li')
 console.log(concerts)
 
-// Get the <span> element that closes the modal
-var span = document.querySelector(".close");
 
 // When the user clicks on the button, open the modal
 /*
@@ -52,12 +66,8 @@ btn.onclick = function() {
 }
 */
 
-// When the user clicks on a concert, open the modal
-concerts.forEach( concert =>{
-    concert.onclick = ()=>{
-        modal.style.display = "block"
-    }
-})
+// Get the <span> element that closes the modal
+var span = document.querySelector(".close");
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
