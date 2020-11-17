@@ -1,17 +1,55 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+/********** fin reset ************/
+
 * {
     box-sizing: border-box;
 }
 
 body {
     background-color: rgb(240, 240, 240);
-    margin: 0;
     padding-top: 7rem;
     color: rgb(53, 53, 53);
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
 }
 
 h1, h2, h3 {
@@ -28,8 +66,8 @@ h1 {
 
 header {
     background-color: white;
-    margin-bottom: 10px;
-    box-shadow: 3px 3px 6px rgb(180, 180, 180);
+    margin-bottom: 2rem;
+    box-shadow: 0.2rem 0.2rem 0.3rem rgb(180, 180, 180);
     /* positionnement */
     position: fixed;
     top: 0;
@@ -39,8 +77,6 @@ header {
 }
 
 .nav-container {
-    display: flex;
-    justify-content: space-around;
     padding: 0.5rem;
 }
 
@@ -50,7 +86,6 @@ header {
 
 nav {
     padding-top: 0.9rem;
-    line-height: 0.3rem;
 }
 
 nav ul li {
@@ -60,27 +95,27 @@ nav ul li {
 nav ul li a {
     color: rgb(53, 53, 53);
     text-decoration: none;
-    font-size: 18px;
-    margin: 0 10px;
-    padding-bottom: 3px;
+    margin: 0 0.8rem;
+    padding-bottom: 0.2rem;
     font-size: 1.3rem;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
 }
 
 nav ul li a:hover {
-    border-bottom: 2px solid rgb(53, 53, 53);;
+    border-bottom: 0.3rem solid rgb(53, 53, 53);;
 }
 
 main {
     max-width : 1000px;
     margin: 0 auto;
     background-color: white;
-    padding: 20px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 #presentation {
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 6rem 11rem;
     background-image: url("../img/Comic-Books.jpg");
@@ -88,7 +123,6 @@ main {
     background-size: cover;
     background-position: 25%;
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 .container-presentation {
@@ -110,10 +144,11 @@ main {
 .link {
     color: rgb(53, 53, 53);
     text-decoration: none;
-    border: 2px solid rgb(53, 53, 53);
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 2rem
+    border: 0.2rem solid rgb(53, 53, 53);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    font-weight: bold;
 }
 
 .link:hover {
@@ -138,11 +173,6 @@ main {
 .heros {
     margin-bottom: 3rem;
 }
-.row {
-    display: flex;
-    justify-content: space-around;
-   
-}
 
 .col {
     flex-basis: 30%;
@@ -155,7 +185,6 @@ main {
 }
 
 .slider-container {
-    display: flex;
     justify-content: center;
 }
 
@@ -186,8 +215,73 @@ main {
     background: none;
 }
 
+.btn:focus {
+    border: none;
+}
+
 /* CONTACT */
 
-.container-contact {
-    display: flex;
+#contact h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#contact .container-contact-elem .item {
+    margin-bottom: 1rem;
+}
+
+#contact label, #contact p {
+    margin-bottom: 0.5rem;
+}
+
+.container-contact-elem {
+    padding: 0rem 2rem;
+}
+
+.promise {
+    font-size: 0.8rem;
+}
+.form-item {
+    margin-bottom: 0.8rem;
+}
+
+input[type="submit"] {
+    border: 0.2rem solid rgb(53, 53, 53);
+    border-radius: 0.3rem;
+    color: rgb(53, 53, 53);
+    background-color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+table {
+    border: 0.2rem solid rgb(75, 75, 75);
+    text-align: center;
+    margin: 0 auto;
+}
+
+table thead th {
+    border-bottom: 0.2rem solid rgb(75, 75, 75);
+    padding: 0.2rem;
+}
+
+table td {
+    padding: 0.2rem;
+}
+
+/* FOOTER */
+footer .socialmedia ul li {
+    display: inline-block;
+}
+
+footer {
+    background-color: white;
+    padding: 1rem 0rem;
+}
+
+footer i {
+    color:  rgb(70, 70, 70);
+    font-size: 1.5rem;
+    padding: 0 0.2rem;
 }

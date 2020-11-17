@@ -9,12 +9,13 @@
         <link rel="stylesheet" href="./assets/css/andrzejewski_pauline.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/fontawesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/fontawesome.css">
     </head>
 
     <body>
         <header>
-            <div class="container nav-container">
+            <div class="container nav-container flex space-around">
                 <img src="./assets/img/pnghut_speech-balloon-comic-book-comics-various_hVGqqbwUaR.png" alt="Formation FullStack">
                 <nav>
                     <ul>
@@ -33,7 +34,7 @@
         </header>
         <main>
 
-            <div id="presentation">
+            <div id="presentation" class="mb-2">
                 <div class="container-presentation">
                         <h1>Bienvenue !</h1>
                         <p>Une page pour les fans de comics</p>
@@ -43,14 +44,12 @@
             <div id="heros">
                 <div class="heros">
                     <h1>Quelques uns de nos Héros...</h1>
-                    <div class="row">
+                    <div class="row flex space-around">
                         <div class="col">
                             <img src="./assets/img/spider-man-cover.jpg" alt="">
                             <h2>Spider-Man</h2>
                             <hr />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo numquam qui minus accusantium vitae
-                                totam temporibus at dicta ipsum, repellat illo placeat eos optio sit cupiditate? Iure velit
-                                obcaecati impedit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, unde facilis! Dolores error veniam aspernatur ipsam qui quo eaque dolor veritatis aperiam eos maiores, fugiat totam ipsa accusantium adipisci? A!  
                             </p>
                             <a href="https://fr.wikipedia.org/wiki/Spider-Man" class="link" target="_blank">En savoir plus</a>
                         </div>
@@ -77,7 +76,7 @@
                 </div>
                 <div class="vilains">
                     <h1>... Sans oublier les vilains</h1>
-                    <div class="slider-container">
+                    <div class="slider-container flex">
                         <button class=" btn prev-btn">
                             <img src="./assets/img/left-arrow.png" alt="">
                         </button>
@@ -99,22 +98,22 @@
                 </div>
             </div>
             
-            <div id="contact">
+            <div id="contact" class="mb-2">
                 <h1>Nous contacter</h1>
-                <div class="container-contact">
-                    <div class="elem">
+                <div class="container-contact flex">
+                    <div class="container-contact-elem">
                         <h2>Votre avis nous intéresse !</h2>
                         <form action="POST" action="fichier.php">
-                            <div class="formItem">
+                            <div class="form-item">
                                 <label for="labelFirstname">Votre réelle identité :</label>
                                 <input required type="text" name="firstname" id="labelFirstname">
-                                <p>(Ne sera dévoilée sous aucun pretexte)</p>
+                                <p class="promise">(Ne sera dévoilée sous aucun pretexte)</p>
                             </div>
-                            <div class="formItem">
+                            <div class="form-item">
                                 <label for="labelMail">Votre email :</label>
                                 <input required type="text" name="mail" id="labelMail">
                             </div>
-                            <div>
+                            <div class="form-item">
                                 <p>Êtes vous plutôt Team Marvel ou Team DC Comics ?</p>
                 
                                 <div>
@@ -131,18 +130,14 @@
                                     <input type="radio" id="radioboth" name="univers" value="bothunivers">
                                     <label for="radioboth">Les deux sont corrects... Non ?</label>
                                 </div>
+                            </div> 
                 
-                                <div>
+                                <div class="form-item">
                                     <p>Quels sont les personnages que vous préférés ?</p>
                     
                                     <div>
                                         <input type="checkbox" id="checkboxSuperMan" name="superman">
-                                        <label for="checkboxSuperMan">SuperMan</label>
-                                    </div>
-                    
-                                    <div>
-                                        <input type="checkbox" id="checkboxThor" name="thor">
-                                        <label for="checkboxThor">Thor</label>
+                                        <label for="checkboxSuperMan">Super-Man</label>
                                     </div>
                     
                                     <div>
@@ -159,27 +154,27 @@
                                         <input type="checkbox" id="checkboxPoison" name="poison">
                                         <label for="checkboxPoison">Poison Ivy</label>
                                     </div>
-                                    <div class="formItem">
-                                        <label for="labelMessage">Un dernier mot ? </label>
-                                        <textarea name="message" id="labelMessage" cols="45" rows="4" placeholder="Saisissez votre message"></textarea>
-                                    </div>
                                 </div>
-                            </div>
+                                <div class="form-item">
+                                    <label for="labelMessage">Un dernier mot ? </label>
+                                    <textarea name="message" id="labelMessage" cols="45" rows="4" placeholder="Saisissez votre message"></textarea>
+                                </div>
+                          
                             <input class="send" type="submit" value="Envoyer">
                         </form>
                     </div>
                     
-                    <div class="elem">
+                    <div class="container-contact-elem">
                         <div class="item">
                             <h2>Où Nous Trouver</h2>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10121.804200666384!2d3.061398!3d50.6373138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x684c25d4a2521d13!2sDernier%20Bar%20avant%20la%20Fin%20du%20Monde%20-%20Lille!5e0!3m2!1sfr!2sfr!4v1605617969094!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10121.804200666384!2d3.061398!3d50.6373138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x684c25d4a2521d13!2sDernier%20Bar%20avant%20la%20Fin%20du%20Monde%20-%20Lille!5e0!3m2!1sfr!2sfr!4v1605617969094!5m2!1sfr!2sfr" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                         <div class="item">
-                            <h2>Quelques évènements à venir</h2>
+                            <h2>A ne pas louper !</h2>
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>Convention</th>
+                                        <th>Conventions</th>
                                         <th>Date</th>
                                     </tr>
                                 </thead>
@@ -200,6 +195,28 @@
                 
             </div>
         </main>
+        <footer>
+            <div class="container">
+                <div class="flex space-around">
+                    <p>Copyright 2020...</p>
+                    
+                    <div class="socialmedia">
+                        <ul>
+                            <li>
+                                <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/" target="_target"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+        </footer>
     </body>
     <script src="./assets/js/andrzejewski_pauline.js"></script>
 </html>
