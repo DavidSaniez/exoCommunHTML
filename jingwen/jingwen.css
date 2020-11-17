@@ -3,32 +3,41 @@ body {
 }
 
 #mainNav{
-    position: absolute;
     background-color: rgb(209, 162, 162);
-    width: 100%;
     top: 40px;
     text-align: center;
     margin: auto;
-    padding: 10px;
-   
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
 
 #bienvenue {
     font-size: 1.5em;
     margin:0;
+    margin-bottom: 10px;
 }
 
-.lien{
-    color: #422626;  /* CSS link color (red) */
+#lien{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+ }
+
+ .link{
+     width: 10%;
+     color: rgb(66, 60, 60);
  }
 
 
 #pageContent {
-    margin-top: 25px;
-    padding: 100px 0px 10px;
+    padding: 10px 0;
     background-size: cover;
     display: flex;
 }
+
 main{
     background-color: rgba(155,155,155,0.8);
     display: flex;
@@ -36,7 +45,6 @@ main{
     color: black;
     width: 80%;
     padding: 0 10px;
-    font
 }
 
 #mainFooter{
@@ -54,14 +62,23 @@ main{
 
 
 #rightCol{
+    padding: 0 10px;
     width: 20%;
     text-align: center;
     background-color: rgb(129, 123, 123);
+    display: flex;
+    flex-direction: column;
 }
 
 img{
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    height: 150px;
+    width: 150px;
+    align-self: center ;
+}
+
+
+.colpick{
+    align-self:flex-end;
 }
