@@ -5,11 +5,12 @@ init = ()=>{
     fetch('assets/concerts.json')
     .then( resp => resp.json())
     .then(data => {
+        /*
         data.forEach(concert => {
-            concertArray.push(concert)
-
+           // concertArray.push(concert)
         });
-
+        */
+        concertArray = Array.from(data)
         fillConcertsList()
     })
 }
@@ -26,6 +27,10 @@ fillConcertsList = ()=>{
         //create a card Concert
         let card = document.createElement('div')
         card.classList = "card"
+        card.style.backgroundColor= "white"
+        card.style.width = "fit-content"
+        card.style.margin = "1vw"
+        card.style.border = "solid goldenrod 1px"
 
         let cardHeader = document.createElement('p')
         cardHeader.textContent = concert.name;
