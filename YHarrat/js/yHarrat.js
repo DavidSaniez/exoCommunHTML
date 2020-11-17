@@ -56,7 +56,7 @@ var modal = document.querySelector("#myModal");
 
 // Get the Concerts that opens the modal
 let concerts = document.querySelectorAll('#concertsList>li')
-console.log(concerts)
+
 
 
 // When the user clicks on the button, open the modal
