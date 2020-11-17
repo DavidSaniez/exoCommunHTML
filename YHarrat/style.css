@@ -103,3 +103,8 @@ footer{
     margin-top: 2vh;
     background-color: gainsboro;
 }
+
+#concertsList{
+    list-style: none;
+    line-height: 1.5em;
+}

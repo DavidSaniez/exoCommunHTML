@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Sungha jung</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./modal.css">
 </head>
 <body>
     <header> <h1>Meet Sungha Jung </h1> </header>
@@ -27,7 +28,35 @@
                 <img width="512" alt="2016 Musikmesse Frankfurt in Sungha Jung 02" src="./images/sungha-jung.jpg">            
                 <img width="512" alt="2016 Musikmesse Frankfurt in Sungha Jung 02" src="./images/sungha-jung-young.jpg">            
 
-        
+                <!-- Trigger/Open The Modal -->
+                <!-- <button id="myBtn">Open Modal</button> -->
+                <h3>Coming Soon Concerts</h3>
+                <ul id="concertsList">
+
+                </ul>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Fill in the form</p>
+                        <form action="">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom">
+
+                            <label for="prenom">Prenom</label>
+                            <input type="text" id="prenom">
+
+                            <input type="submit" value="Book a Ticket">
+
+
+                        </form>
+                        
+                    </div>
+
+                </div> 
         
         </aside>
 
@@ -68,8 +97,10 @@
                 </ul>
             </p>   
         </article>
+        
     </div>
-    
+
+
         
     
     </main>
