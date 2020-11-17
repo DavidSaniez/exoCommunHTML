@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    margin: 0;
+    padding-top: 7rem;
+    color: rgb(53, 53, 53);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/****** HEADER ******/
+
+header {
+    background-color: white;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 6px rgb(180, 180, 180);
+    /* positionnement */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+.nav-container img {
+    width: 7%;
+}
+
+nav {
+    padding-top: 0.9rem;
+    line-height: 0.3rem;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: rgb(53, 53, 53);
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+    padding-bottom: 3px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid rgb(53, 53, 53);;
+}
+
+main {
+    max-width : 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+#presentation {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 6rem 11rem;
+    background-image: url("../img/Comic-Books.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.container-presentation {
+    background-color: rgb(255, 255, 255, 0.8);
+    font-family: 'Oswald', sans-serif;
+    padding: 2rem;
+    margin: 1rem 0rem;
+}
+
+.container-presentation h1 {
+    margin: 0;
+}
+
+.container-presentation p {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.link {
+    color: rgb(53, 53, 53);
+    text-decoration: none;
+    border: 2px solid rgb(53, 53, 53);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 2rem
+}
+
+.link:hover {
+    background-color: rgb(53, 53, 53);
+    color: rgb(255, 255, 255);
+}
+
+/* NOS HEROS */
+
+#heros {
+    text-align: center;
+}
+
+#heros p {
+    margin-bottom: 1.5rem;
+}
+
+#heros .heros img {
+    width: 50%;
+}
+
+.heros {
+    margin-bottom: 3rem;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.col {
+    flex-basis: 30%;
+}
+
+/* VILAINS */
+
+.vilains {
+    margin-bottom: 3rem;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    max-width:100%
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+  width: 20rem;
+}
+
+.active {
+    display: block;
+    
+}
+
+.btn img {
+    width: 45%;
+}
+
+.btn {
+    width: 4.5rem;
+    border: none;
+    background: none;
+}
+
+/* CONTACT */
+
+.container-contact {
+    display: flex;
+}
