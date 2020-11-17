@@ -11,6 +11,17 @@ h4 {
     color: #6d071a;
 }
 
+<<<<<<< HEAD
+=======
+.listeText{
+    color: #6d071a;
+    font-size: large;
+    justify-content: flex-start;  
+    padding: 20px;
+    font-weight: bold;
+}
+
+>>>>>>> feature_atelierCreation
 #nav {
     border-bottom: 3px solid #6d071a;
     background-color: #F8F5CA;
@@ -42,6 +53,17 @@ h4 {
     background-color: #6d071a;
 }
 
+<<<<<<< HEAD
+=======
+.libre{
+    background-color: #721f2e;
+}
+
+.complet{
+    background-color: red;
+}
+
+>>>>>>> feature_atelierCreation
 img {
     width: 75%;
     height: 500px;
@@ -76,4 +98,19 @@ img {
     border-radius: 10px 100px / 120px;
     text-align: center;
     color: #6d071a;
+<<<<<<< HEAD
+=======
+}
+
+.listeCreation {
+margin-top: 100px;
+}
+
+.btnAtelier{
+    float: right;
+}
+
+.atelierComplet{
+    color: red;
+>>>>>>> feature_atelierCreation
 }
