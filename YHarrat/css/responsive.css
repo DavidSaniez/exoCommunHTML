@@ -1,0 +1,23 @@
+@media screen and (min-width:1200px) {
+
+    #img5{
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:1200px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+        min-width: fit-content;
+        min-height: fit-content;
+    }
+
+    #img2, #img3, #img4{
+        display: none;
+    }
+    
+}

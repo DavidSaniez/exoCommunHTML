@@ -1,0 +1,128 @@
+
+.wrapper {
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+  width: 96vw;
+  height: 100vh;
+    margin-left:2vw;
+    margin-right: 2vw;
+  animation: animation 100s linear infinite;
+}
+
+@keyframes animation {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    background-color:gold;
+    border-radius: 25px;
+    padding:1vh;
+}
+
+a:hover{
+    background-color:lightblue;
+    color:floralwhite;
+    border: goldenrod dashed 2px;
+    
+}
+
+h1{
+    color:whitesmoke;
+    font-size: 6vw;
+    text-decoration: underline overline gold ;
+}
+
+h3{
+    font-size: 3.1vw;
+}
+
+body{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: dodgerblue;
+}
+
+p{
+    font-size: 2.2rem;
+}
+
+img{
+    margin:1vw;
+    border: double goldenrod;
+}
+
+header{
+    border: double floralwhite;
+
+
+}
+
+nav{
+    
+    position: sticky;
+}
+
+nav>ul{
+    justify-content: space-around;
+    list-style: none;
+    font-size: 2vw;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: gainsboro;
+    
+}
+
+section{
+    margin: 2vw;
+    margin-bottom: 3vw;
+}
+
+article{
+    margin:2vw;
+}
+
+aside{
+    float: right;
+}
+
+#songs{
+display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#songs>li{
+    margin: 1.5vh;
+    list-style: none;
+}
+
+footer{
+    border: double floralwhite;
+    margin-top: 2vh;
+    background-color: gainsboro;
+}
+
+#concertsList{
+    list-style: none;
+    line-height: 1.5em;
+    justify-content: space-between;
+}
