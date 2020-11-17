@@ -28,11 +28,10 @@ li {
 a {
     text-decoration: none;
     color: #8f8f8f;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     transition: all 0.5s ease-in-out;
     position: relative;
-    text-transform: uppercase;
 }
 
 h1{
@@ -62,4 +61,15 @@ aside > p {
 
 aside > p > a {
     width: 30px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+figure{
+    display: flex;
+    flex-wrap: nowrap;
+    
 }
