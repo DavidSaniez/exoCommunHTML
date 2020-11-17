@@ -3,6 +3,25 @@
 * {
   box-sizing: border-box;
 }
+#popup{
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  /* your styles */
+  }
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.img_wrapper{
+  display: inline-block;
+  position: relative;
+}
+
 #alert {
   padding: 20px;
   background-color: #f44336; /* Red */
