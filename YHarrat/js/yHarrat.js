@@ -2,7 +2,7 @@
 let concertArray = []
 
 init = ()=>{
-    fetch('./concerts.json')
+    fetch('assets/concerts.json')
     .then( resp => resp.json())
     .then(data => {
         data.forEach(concert => {
