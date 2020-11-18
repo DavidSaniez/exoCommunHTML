@@ -46,6 +46,7 @@ p {
 }
 
 aside {
+    display: flex;
     width: 40%;
     padding-left: .5rem;
     margin-left: .5rem;
