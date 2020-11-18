@@ -42,11 +42,7 @@ let concertArray = [
 // }
 
 init = ()=>{
-  console.log(concertArray.filter(c => c.id == 2)[0].places)
   fillConcertsList()
- 
-
-
 }
 
 
@@ -54,7 +50,9 @@ init = ()=>{
 let cList = document.querySelector('#concertsList')
 
 fillConcertsList = ()=>{
+  //vider la cList
   cList.innerHTML = "";
+  
     concertArray.forEach( concert =>{
         
           let elem = document.createElement('li')
