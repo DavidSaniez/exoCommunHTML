@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" lang="fr" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>WebAgency - Votre agence web !</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="assets/img/logo.png" alt="logo webagency" title="logo webagency">
+        </div>
+
+        <nav id="normal_navbar">
+            <ul id="header_list">
+                <li><a class="header_link" href="#slider">Accueil</a></li>
+                <li><a class="header_link" href="#services">Services</a></li>
+                <li><a class="header_link" href="#section_projet">Portfolio</a></li>
+                <li><a class="header_link" href="#container_contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav id="responsive_bar">
+            <label id="label_navbar" for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+            <div class="menu">
+                <a href="#slider">Accueil</a>
+                <a href="#services">Services</a>
+                <a href="#section_projet">Portfolio</a>
+                <a href="#container_contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SLIDER -->
+    <section id="slider">
+
+        <!-- First slide -->
+        <div id="one" class="slide">
+            <div class="header_slide"></div>
+            <div class="body_slide">
+                <nav>
+                    <a class="prev" href="#two"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
+                    <a class="next" href="#two"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
+                </nav>
+                <div class="slider_description">
+                    <h1><span>WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
+                    <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+                    <p><a href="#blue_button">Plus d'infos</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second slide -->
+        <div id="two" class="slide">
+            <div class="header_slide"></div>
+            <div class="body_slide">
+                <nav>
+                    <a class="prev" href="#one"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
+                    <a class="next" href="#one"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
+                </nav>
+            </div>
+        </div>
+
+    </section>
+
+    <!--SERVICES -->
+
+    <section id="services">
+        <div id="conteneur_services">
+            <div class="section_header">
+                <h2>NOS SERVICES</h2>
+                <div class="line">
+                    <div class="round"></div>
+                </div>
+            </div>
+            <div class="description_title">
+                <p>WebAgency crée et développe votre projet en alliant <strong>design et solutions techniques</strong>.<br/>Nous vous proposons <strong>des solutions sur-mesure</strong> qui s'adaptent spécifiquement à votre projet.</p>
+            </div>
+            <div id="services_body">
+                <div>
+                    <img src="assets/img/main-feature.png" alt="image décorative pr section services : un écran d'ordinateur">
+                </div>
+
+                <div>
+                    <div class="services_description">
+                        <div class="services_logo">
+                            <i class="fa fa-line-chart fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div class="services_text">
+                            <h3>UX design</h3>
+                            <p>Nous privilégions une approche <strong>centrée sur l'utilisateur</strong>. Nous étudions avec vous votre projet pour cibler vos besoins et le rendre accessible, ergonomique, et adaptatif (<strong>Responsive Web Design</strong>),
+                                afin d'affirmer votre présence sur tous les supports (ordinateur, tablette, smartphone).</p>
+                        </div>
+                    </div>
+                    <div class="services_description">
+                        <div class="services_logo">
+                            <i class="fa fa-cubes fa-lg"></i>
+                        </div>
+                        <div class="services_text">
+                            <h3>UI design</h3>
+                            <p>Nous créons <strong>l'identité visuelle</strong> de votre projet sur-mesure. Nous mettons en place selon vos souhaits une charte graphique pratique et intuitive de qualité, dans l'esprit de votre entreprise. </p>
+                        </div>
+                    </div>
+                    <div class="services_description">
+                        <div class="services_logo">
+                            <i class="fa fa-pie-chart fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div class="services_text">
+                            <h3>SEO</h3>
+                            <p>Nous optimisons <strong>la visibilité</strong> de votre site auprès des internautes sur les recherches en rapport avec vos produits et services par <strong>le référencement naturel</strong>. Vous allez être populaire !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--PROJETS -->
+
+    <div id="section_projet">
+        <div class="section_header">
+            <h2>NOS PROJETS</h2>
+            <div class="line">
+                <div class="round"></div>
+            </div>
+        </div>
+        <div class="description_title">
+            <p>Parcourez quelques exemples de nos dernières réalisations, découvrez nos expertises.<br/>Rejoignez-nous et faites partie de cet album !</p>
+        </div>
+        <div id="input_section">
+            <input class="project_input" type="radio" name="bt" id="bt_all" checked/>
+            <label class="label_section" for="bt_all"><span>All Works</span></label>
+
+            <input class="project_input" type="radio" name="bt" id="bt_creative" />
+            <label class="label_section" for="bt_creative"><span>Creative</span></label>
+
+            <input class="project_input" type="radio" name="bt" id="bt_corporate" />
+            <label class="label_section" for="bt_corporate"><span>Corporate</span></label>
+
+            <input class="project_input" type="radio" name="bt" id="bt_portfolio" />
+            <label class="label_section" for="bt_portfolio"><span>Portfolio</span></label>
+        </div>
+
+        <div id="galeria" class="grid">
+            <div class="label creative">
+                <div class="img-container">
+                    <img class="project_img" src="assets/img/portfolio/01.jpg" alt="oridnateur_1">
+                    <div class="overlay">
+                        <div>
+                            <h2 class="second_title_projet">Portfolio item 1</h2>
+                            <p>Creative</p>
+                        </div>
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="label corporate">
+                <div class="img-container">
+                    <img class="project_img" src="assets/img/portfolio/02.jpg" alt="ordinateur_2">
+                    <div class="overlay">
+                        <div>
+                            <h2 class="second_title_projet">Portfolio item 2</h2>
+                            <p>Creative</p>
+                        </div>
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="label portfolio">
+                <div class="img-container">
+                    <img class="project_img" src="assets/img/portfolio/03.jpg" alt="ordinateur + café">
+                    <div class="overlay">
+                        <div>
+                            <h2 class="second_title_projet">Portfolio item 3</h2>
+                            <p>Creative</p>
+                        </div>
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="label corporate">
+                <div class="img-container">
+                    <img class="project_img" src="assets/img/portfolio/04.jpg" alt="tablette">
+                    <div class="overlay">
+                        <div>
+                            <h2 class="second_title_projet">Portfolio item 4</h2>
+                            <p>Creative</p>
+                        </div>
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="label creative">
+                <div class="img-container">
+                    <img class="project_img" src="assets/img/portfolio/05.jpg" alt="ordinateur 3">
+                    <div class="overlay">
+                        <div>
+                            <h2 class="second_title_projet">Portfolio item 5</h2>
+                            <p>Corporate</p>
+                        </div>
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="label corporate">
+                <div class="img-container">
+                    <img class="project_img" src="assets/img/portfolio/06.jpg" alt="imac">
+                    <div class="overlay">
+                        <div>
+                            <h2 class="second_title_projet">Portfolio item 6</h2>
+                            <p>Corporate</p>
+                        </div>
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="label portfolio">
+                <div class="img-container">
+                    <img class="project_img" src="assets/img/portfolio/07.jpg" alt="bureau + ordinateur">
+                    <div class="overlay">
+                        <div>
+                            <h2 class="second_title_projet">Portfolio item 7</h2>
+                            <p>Portfolio</p>
+                        </div>
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="label portfolio">
+                <div class="img-container">
+                    <img class="project_img" src="assets/img/portfolio/08.jpg" alt="macbook sur table">
+                    <div class="overlay">
+                        <div>
+                            <h2 class="second_title_projet">Portfolio item 8</h2>
+                            <p>Portfolio</p>
+                        </div>
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--FOOTER -->
+        <footer>
+            <section>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.431204606119!2d2.3454415680663883!3d48.873166307519575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1484233326288"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="container_contact">
+                    <form>
+                        <h2>Contact Info</h2>
+                        <p><span>David Saniez</span></p>
+                        <p class="adress_contact">2i Tech Academy</p>
+                        <p class="adress_contact">Tél : 01 02 03 04 05</p>
+                        <div id="input_contact">
+                            <input type="text" name="name" placeholder="Nom" />
+                            <input type="text" name="email" placeholder="E-mail" />
+                            <input type="text" name="subject" placeholder="Sujet" />
+                            <textarea name="message" placeholder="Message"></textarea>
+                            <p><a href="#" class="bouton" title="Envoyer votre message">Envoyer</a></p>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <p class="copyright">Copyright 2020 - David Saniez</p>
+            </section>
+        </footer>
+    </div>
+    <script src="https://use.fontawesome.com/f0bc94619a.js"></script>
+</body>
+
+</html>
